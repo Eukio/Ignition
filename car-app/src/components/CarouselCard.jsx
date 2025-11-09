@@ -64,7 +64,7 @@ function CarouselCard({ model }) {
         marginTop: 'auto',
         padding: '1rem'
       }}>
-        <button className="model-card__button">Learn more</button>
+        <button className="model-card__button">Take Me for a Test Drive</button>
       </footer>
     </article>
   )
