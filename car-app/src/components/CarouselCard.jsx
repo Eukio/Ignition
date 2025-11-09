@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/ModelCard.css'
+import '../styles/CarouselCard.css'
 
 function CarouselCard({ model }) {
   if (!model) return null
@@ -64,7 +64,7 @@ function CarouselCard({ model }) {
         marginTop: 'auto',
         padding: '1rem'
       }}>
-        <button className="model-card__button">Take Me for a Test Drive</button>
+        <button className="model-card__button">Take me for a test drive!</button>
       </footer>
     </article>
   )
