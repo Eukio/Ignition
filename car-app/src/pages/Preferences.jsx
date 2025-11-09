@@ -76,7 +76,11 @@ export default function Preferences({models = []}) {
       justifyContent: 'flex-start',
       padding: '2rem',
     }}> 
-      <h2>Preferences</h2>
+      <h2 style={{
+      fontSize: '2rem',
+      fontWeight: 700,
+      marginBottom: '1.5rem',
+    }}>Preferences</h2>
       <div style={{
       display: 'flex',
       flexDirection: 'row',

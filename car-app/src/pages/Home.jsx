@@ -31,6 +31,10 @@ export default function Home({ onNavigate }) {
         onClick={handleClick}
         style={{ cursor: 'pointer' }}
       />
+      <div>
+        {/* add padding to the bottom of the page */}
+        <div style={{ paddingBottom: '20px' }}></div>
+      </div>
     </section>
   );
 }
