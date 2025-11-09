@@ -77,15 +77,8 @@ export default function Preferences({models = []}) {
       padding: '2rem',
     }}> 
       <h2>Preferences</h2>
-      <div style={{
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '2rem',
-      width: '100%'
-    }}>
-      <div>
+      <div className="flex md:flex-row items-center justify-center gap-4 md:gap-8 w-full">
+      <div className="md:w-auto">
       <h3>Price: ${priceValue.toLocaleString()}</h3>
         <DiscreteSlider 
           options={price_options}
@@ -93,7 +86,7 @@ export default function Preferences({models = []}) {
           onChange={handlePriceChange}
         />
       </div>
-      <div>
+      <div className="md:w-auto">
       <h3>Seats: {seatValue}</h3>
         <DiscreteSlider 
           options={seat_options}
@@ -101,7 +94,7 @@ export default function Preferences({models = []}) {
           onChange={handleSeatChange}
         />
       </div>
-      <div>
+      <div className="md:w-auto">
       <h3>Miles Per Gallon: {mpgValue}</h3>
         <DiscreteSlider 
           options={MPG_options}

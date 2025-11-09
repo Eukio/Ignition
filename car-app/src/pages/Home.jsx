@@ -15,7 +15,7 @@ export default function Home({ onNavigate }) {
         <img src={toyotaImage} alt="Toyota Cars" className="toyota-logo" />
       </div>
       <div>
-        <img src={ignitionLogo} alt="Ignition Logo" className="ignition-logo" />
+        <img src={ignitionLogo} alt="Ignition Logo" className="ignition-logo-responsive w-full max-w-[50rem] h-auto mb-5 mx-auto px-4 md:px-0" />
       </div>
       <div>
         <h1 className="heading1">Spark your dream ride</h1>
