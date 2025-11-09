@@ -1,0 +1,55 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background: var(--color-dark);
+  color: var(--color-background);
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.site-header__brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.site-header__nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.site-header__link {
+  background: transparent;
+  color: var(--color-background);
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.site-header__link:hover {
+  background: var(--color-secondary);
+}
+
+.site-header__link.active {
+  background: var(--color-primary);
+}
+
+/* Give the page content some top padding so the fixed header doesn't cover it */
+main {
+  padding-top: 80px;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
