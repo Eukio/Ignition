@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import DiscreteSlider from '../components/Slider.jsx'
 import { usePreferences } from '../hooks/usePreferences.js'
-import Match from './Match.jsx';
+import Match from '../components/Match.jsx';
 
 const price_options = {
         label: "Price",
@@ -86,7 +86,7 @@ export default function Preferences({models = []}) {
       width: '100%'
     }}>
       <div>
-      <h3>Price: ${priceValue.toLocaleString()}</h3>
+      <h3>Max Price: ${priceValue.toLocaleString()}</h3>
         <DiscreteSlider 
           options={price_options}
           value={priceValue}
@@ -94,7 +94,7 @@ export default function Preferences({models = []}) {
         />
       </div>
       <div>
-      <h3>Seats: {seatValue}</h3>
+      <h3>Min Seats: {seatValue}</h3>
         <DiscreteSlider 
           options={seat_options}
           value={seatValue}
@@ -102,7 +102,7 @@ export default function Preferences({models = []}) {
         />
       </div>
       <div>
-      <h3>Miles Per Gallon: {mpgValue}</h3>
+      <h3>Min Miles Per Gallon: {mpgValue}</h3>
         <DiscreteSlider 
           options={MPG_options}
           value={mpgValue}
