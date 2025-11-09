@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import DiscreteSlider from '../components/Slider.jsx'
 import { usePreferences } from '../hooks/usePreferences.js'
-import Match from './Match.jsx';
+import Match from '../components/Match.jsx';
 
 const price_options = {
         label: "Price",
