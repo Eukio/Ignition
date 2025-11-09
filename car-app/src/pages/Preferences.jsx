@@ -2,7 +2,11 @@ import React, { useState, useEffect, useCallback } from 'react'
 import DiscreteSlider from '../components/Slider.jsx'
 import { usePreferences } from '../hooks/usePreferences.js'
 import Match from '../components/Match.jsx';
+import nextbtn from '../assets/btn/getmatched-btn.png';
 
+const handleClick = () => {
+    onNavigate('match'); // switch state in App
+  };
 const price_options = {
         label: "Price",
         default_value: 30000,
@@ -98,7 +102,7 @@ export default function Preferences({models = []}) {
         />
       </div>
       <div className="md:w-auto">
-      <h3>Seats: {seatValue}</h3>
+      <h3>Seating Capacity: {seatValue}</h3>
         <DiscreteSlider 
           options={seat_options}
           value={seatValue}
@@ -115,7 +119,14 @@ export default function Preferences({models = []}) {
       </div>
       </div>
       </div>
+      <img
+          src={nextbtn}
+          alt="Next Button"
+          className="next-button"
+          onClick={handleClick}
+        />
       <Match models={models}></Match>
     </section>
+    
   )
 }

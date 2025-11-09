@@ -48,6 +48,7 @@ export default function MatchPage({ models = [] }) {
           </ReactCarousel.Item>
         ))}
       </ReactCarousel>
+      <div style={{ paddingBottom: '40px' }}></div>
       <div className="match-count">
         Showing {filteredModels.length} matching vehicles
       </div>
